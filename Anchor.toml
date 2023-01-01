@@ -1,0 +1,15 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+pandora = "FE6d3eupaL74LBpLoe4cJqEn6fzSUrp9AVp75B58SSAc"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "https://rpc.helius.xyz/?api-key=3d091276-a077-4646-a685-5e4472adb627"
+wallet = "/home/nico/.config/solana/mainnet.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
